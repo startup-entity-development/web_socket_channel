@@ -704,7 +704,7 @@ class WebSocketImpl extends Stream with _ServiceObject implements StreamSink {
   bool _writeClosed = false;
   int? _closeCode;
   String? _closeReason;
-  Duration? _pingInterval;
+  Duration ? _pingInterval;
   Timer? _pingTimer;
   late final _WebSocketConsumer _consumer;
 

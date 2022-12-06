@@ -99,7 +99,7 @@ class WebSocketChannel extends StreamChannelMixin {
       {String? protocol, Duration? pingInterval, bool serverSide = true})
       : _webSocket = WebSocketImpl.fromSocket(
             channel.stream, channel.sink, protocol, serverSide)
-          ..pingInterval = const Duration(milliseconds: 5000);
+          ..pingInterval = pingInterval;
 
   /// Creates a new WebSocket connection.
   ///
